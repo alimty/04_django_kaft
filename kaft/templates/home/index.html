@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+{% include 'home/carousel.html' %}
+
+<!-- MultiCursor ozelligini kesinlikle ogrenin -->
+
+
+<div class="container mt-5">
+    <div class="row">
+        {% include 'product/product.html' %}
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script>
+    $('.carousel').carousel()
+</script>
+{% endblock %}
