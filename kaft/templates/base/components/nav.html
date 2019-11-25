@@ -52,6 +52,28 @@
 
             </div>
           </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup=""
+                aria-expanded="">
+                Diğer
+              </a>
+              <div class="dropdown-menu " x-placement="bottom-start">
+                  {% for item in pages %}
+                    <a class="dropdown-item" href="">{{ item.page_name }}</a>
+              {% endfor %}
+  
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup=""
+                  aria-expanded="">
+                  Oluştur
+                </a>
+                <div class="dropdown-menu " x-placement="bottom-start">
+                      <a class="dropdown-item" href="/manage/page/create">Sayfa Oluştur</a>
+                      <a class="dropdown-item" href="">Ürün Oluştur</a>
+                </div>
+              </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder='Senin İçin'>

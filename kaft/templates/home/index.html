@@ -1,13 +1,18 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-{% include 'home/carousel.html' %}
-
-<!-- MultiCursor ozelligini kesinlikle ogrenin -->
 
 
 <div class="container mt-5">
     <div class="row">
+
+        <ul>
+            <li>
+                {% for page in page %}
+                <p> {{ page.page_name }}</p>
+                {% endfor %}
+            </li>
+        </ul>
         {% include 'product/product.html' %}
     </div>
 </div>

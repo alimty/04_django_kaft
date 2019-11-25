@@ -4,15 +4,11 @@
             <div class="col-sm-8">
                 <h3 class="text-light">Urun Ozellikleri</h3>
                 <ul class="list-inline">
+                    {% for page in pages %}
                     <li class="list-inline-item">
-                        <a href="">T-Shirt</a>
+                        <a href="">{{ page.page_name }}</a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="">Bere</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="">Canta</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-sm-4">
@@ -68,11 +64,11 @@
             <div class="col-sm-2">
                 <h5 class="text-light">Bilgi</h5>
                 <ul class="list-unstyled">
-                        {% for item in pages %}
-                        <li class="list-item">
-                            <a class="" href="">{{ item.title }}</a>
-                        </li>
-                        {% endfor %}
+                    {% for item in pages %}
+                    <li class="list-item">
+                        <a class="" href="">{{ item.title }}</a>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-sm-2">
