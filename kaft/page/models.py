@@ -1,6 +1,6 @@
 from django.db import models
 
-DEFAULT_SATATUS = "darft"
+DEFAULT_STATUS = "draft"
 
 
 STATUS = [
@@ -17,7 +17,7 @@ class Page(models.Model):
     page_name = models.CharField(max_length=50)
     description = models.TextField()
     status = models.CharField(
-      default=DEFAULT_SATATUS,
+      default=DEFAULT_STATUS,
       choices=STATUS,
       max_length=10
     )

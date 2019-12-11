@@ -15,7 +15,6 @@ def page_create(request):
     context = dict()
     context['title'] = 'Page Form'
     context['form'] = PageModelForm(request.POST)
-#     print(f'\n\n\n\n ==== ${request.POST}')
     if request.method == 'POST':
         form = PageModelForm(request.POST)
         if form.is_valid():
