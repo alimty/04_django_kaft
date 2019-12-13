@@ -11,6 +11,6 @@ Tutorial for django project
 
 ### Question:
 
-1. Context['title']= 'Page Form'
+1. Context['title']= 'Page Fo
 
 - Super user created : admin
