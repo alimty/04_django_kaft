@@ -1,6 +1,17 @@
 # 04_django_kaft
 
-Tutorial for django project
+## Run vitual environment
+
+1. /c/000-PPs/04_django_kaft/kaft (master)
+
+- \$ . venv/Scripts/activate
+  (venv)
+
+2. /c/000-PPs/04_django_kaft/kaft (master)
+
+- \$ python manage.py runserver
+
+## Tutorial for django project
 
 1. Start doing App from here.
    https://github.com/guvenaltunsoyy/django-ders-kaft-clone
