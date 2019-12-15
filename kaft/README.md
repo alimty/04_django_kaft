@@ -2,14 +2,9 @@
 
 ## Run vitual environment
 
-1. /c/000-PPs/04_django_kaft/kaft (master)
+1. $ . venv/Scripts/activate
 
-- \$ . venv/Scripts/activate
-  (venv)
-
-2. /c/000-PPs/04_django_kaft/kaft (master)
-
-- \$ python manage.py runserver
+2. $ python manage.py runserver
 
 ## Tutorial for django project
 
@@ -22,9 +17,8 @@
 
 ### Question:
 
-1. Context['title']= 'Page Form"
+1.  
 
-- Super user created : admin
 
 # R&D
 

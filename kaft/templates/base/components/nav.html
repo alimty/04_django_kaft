@@ -75,9 +75,14 @@
                 </div>
               </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder='Senin İçin'>
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Bul</button>
+        <form class="form-inline my-2 my-lg-0" method="GET" enctype="multipart/form-data" >
+          {% csrf_token %}
+        <input class="form-control mr-sm-2" type="text" placeholder='Senin İçin'>
+          <a class="btn btn-secondary my-2 my-sm-0" type="submit"> Bul </a>
+          <a type="submit" class="btn {% if was_logged %} btn-warning {% else %} btn-succes  {% endif %}" style=" margin:5px; " href="{% if was_logged %}/user/logout{% else %}/user/login{% endif %}"> {% if was_logged %} Çikis Yap {% else %} Giris Yap {% endif %} </a>
+          {% if was_logged is None %}
+          <a type="submit" class="btn btn-info"  href="{% url 'signup' %}"> Kayit ol</a>
+          {% endif %}
         </form>
       </div>
     </nav>
