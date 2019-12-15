@@ -11,6 +11,10 @@ Tutorial for django project
 
 ### Question:
 
-1. Context['title']= 'Page Fo
+1. Context['title']= 'Page Form"
 
 - Super user created : admin
+
+# R&D
+
+1. Create virtual environment for each project and save it separetly
